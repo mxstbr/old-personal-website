@@ -1,0 +1,135 @@
+body {
+	opacity: 0;
+	transition: opacity 150ms ease-in-out;
+}
+
+body.js-has-loaded {
+	opacity: 1;
+}
+
+.main {
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: 0 38px;
+	padding-left: 38px;
+	padding-right: 16px;
+	position: relative;
+	margin-top: 9.5em;
+}
+
+.main p + p {
+	margin-top: 0.5em;
+}
+
+.main p + p a {
+	text-decoration: underline;
+}
+
+.main--wide {
+	max-width: $wide-max-width;
+}
+
+.main::after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.main-item {
+	position: relative;
+	margin: 2em 0;
+	font-size: 1em;
+}
+
+.main-item:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.main--animated .main-item {
+	animation: slidein 300ms ease-in-out 1;
+	animation-fill-mode: both;
+	transition: transform 250ms ease-in-out;
+	opacity: 0;
+}
+
+.main-item:nth-of-type(1) {
+	animation-delay: 400ms;
+}
+
+.main-item:nth-of-type(2) {
+	animation-delay: 550ms;
+}
+
+.main-item:nth-of-type(3) {
+	animation-delay: 700ms;
+}
+
+.main-item:nth-of-type(4) {
+	animation-delay: 950ms;
+}
+
+.main-item:nth-of-type(5) {
+	animation-delay: 1100ms;
+}
+
+.main-item a {
+	text-decoration: none;
+}
+
+.main--wide a {
+	text-decoration: underline;
+}
+
+.main-item__icon {
+	height: 1.2em;
+	margin: 0;
+	font-size: 1em;
+	transition: border 150ms ease-out;
+	position: absolute;
+	left: -1.7em;
+	top: 0em;
+}
+
+.main-item p {
+	margin: 0;
+}
+
+.main-item h2 {
+	font-size: 1em;
+	font-weight: 700;
+	margin: 0;
+	display: inline-block;
+}
+
+@keyframes slidein {
+	from {
+		transform: translateX(-10px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes hover {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(10px);
+	}
+}

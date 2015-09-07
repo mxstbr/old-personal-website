@@ -1,0 +1,32 @@
+{
+  "name": "eternalpad",
+  "version": "0.0.2",
+  "description": "One-off, device specific notes.",
+  "dependencies": {
+    "localforage": "^1.2.7"
+  },
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "cssnano": "^2.1.1",
+    "grunt": "^0.4.5",
+    "grunt-babel": "^5.0.1",
+    "grunt-browserify": "^4.0.0",
+    "grunt-contrib-connect": "^0.11.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-includes": "^0.5.1",
+    "grunt-open": "^0.2.3",
+    "grunt-postcss": "^0.5.5",
+    "postcss-focus": "^0.1.1",
+    "postcss-import": "^6.2.0",
+    "postcss-reporter": "^0.4.0",
+    "postcss-simple-vars": "^0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mxstbr/eternalpad.git"
+  },
+  "author": "Max Stoiber",
+  "license": "MIT"
+}

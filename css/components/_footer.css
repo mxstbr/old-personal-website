@@ -1,0 +1,35 @@
+.footer {
+	margin-bottom: 2em;
+	margin-top: 3.5em;
+}
+
+.footer__list {
+	max-width: $max-width;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0 32px;
+	text-align: center;
+}
+
+.footer__list-item {
+	display: inline-block;
+	margin: 0 0.5em;
+}
+
+.footer__list-item,
+.footer__list-item a,
+.footer__list-item svg {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.footer__list-item svg {
+	stroke: $mid-grey;
+	transition: stroke 150ms ease-out, transform 150ms ease-in-out;
+}
+
+.footer__list-item svg:hover {
+	stroke: $dark-grey;
+	transform: scale(1.025);
+}

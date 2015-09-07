@@ -1,0 +1,23 @@
+/*This file contains all application-wide CSS variables.*/
+
+/* Typography */
+$serif: 'Source Serif Pro', Georgia, serif;
+$sans-serif: 'Source Sans Pro', Helvetica Neue, Helvetica, Arial, sans-serif;
+$font-size: 16px;
+
+/* Colors */
+$light-grey: #FAFAFA;
+$mid-grey: #999;
+$dark-grey: #666;
+$text-color: #333;
+
+$light-red: #FB4F4F;
+$dark-red: #C83F3F;
+$blue: #6CC0E5;
+$yellow: #FBC93D;
+$green: #52C274;
+
+/* Sizes */
+$max-width: 335px;
+$wide-max-width: 664px;
+$nav-height: 50px;
