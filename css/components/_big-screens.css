@@ -1,5 +1,9 @@
-@media screen and (min-width: 975px) {
+@media screen and (min-width: 715px) {
 	.main {
+		max-width: 700px;
+	}
+
+	.nav__wrapper {
 		max-width: 700px;
 	}
 
@@ -34,11 +38,10 @@
 	}
 
 	.main-section__open-source .main-item {
-		width: 259px;
-		margin-left: 1.7em;
+		width: 297px;
 	}
 
 	.main-section__open-source .main-item:nth-child(2n) {
-		margin-left: calc(40px + 1.7em);
+		margin-left: 1.8em;
 	}
 }

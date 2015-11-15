@@ -35,6 +35,7 @@
 	max-width: $max-width;
 	display: block;
 	text-align: center;
+	padding: 0 38px;
 }
 
 .nav__wrapper li {
@@ -104,12 +105,10 @@
 
 .nav__item--left {
 	float: left;
-	margin-left: 16px;
 }
 
 .nav__item--right {
 	float: right;
-	margin-right: 16px;
 }
 
 .js-has-scrolled .nav__subtitle {

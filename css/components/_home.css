@@ -76,19 +76,38 @@ body.js-has-loaded {
 	width: 100%;
 }
 
+.main-section__open-source .main-item {
+	padding-left: 1.6em;
+}
+
 .main-item__award {
 	display: block;
-	width: 100%;
 	float: left;
 	vertical-align: middle;
-	height: 35px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 	margin: 0.5em 0;
+	width: 100%;
 }
 
-.main-item__award:nth-of-type(1) {
+.main-item__award img {
+	width: auto;
+	height: 1em;
+	display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.main-item__award p {
+	display: inline-block;
+}
+
+.csswinner img {
+	height: 2em;
+}
+
+/*.main-item__award:nth-of-type(1) {
 	background-image: url(/awwwards.svg);
 }
 
@@ -98,7 +117,7 @@ body.js-has-loaded {
 
 .main-item__award:nth-of-type(3) {
 	background-image: url(/fwaLogo.svg);
-}
+} */
 
 .main-item:nth-of-type(1) {
 	animation-delay: 400ms;
@@ -154,7 +173,7 @@ body.js-has-loaded {
 	font-size: 1em;
 	transition: border 150ms ease-out;
 	position: absolute;
-	left: -1.7em;
+	left: 0.1em;
 	top: 0em;
 }
 
