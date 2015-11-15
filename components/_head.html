@@ -28,3 +28,8 @@
 	<![endif]-->
 </head>
 <body class="js-has-loaded js-has-scrolled">
+	<script>
+		// Progressive Enhancement, if JS runs these classes will be applied dynamically
+		document.body.classList.remove('js-has-loaded');
+		document.body.classList.remove('js-has-scrolled');
+	</script>

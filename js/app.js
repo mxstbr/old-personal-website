@@ -2,9 +2,6 @@ var nav = document.querySelector('.nav');
 var links = document.querySelectorAll('a');
 var scrolled = false;
 
-document.body.classList.remove('js-has-loaded');
-document.body.classList.remove('js-has-scrolled');
-
 // Cross browser compatible, non-overriding window.onload function
 if (window.addEventListener) {
   window.addEventListener("load", init, false);
