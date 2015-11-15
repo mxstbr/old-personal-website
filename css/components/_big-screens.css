@@ -3,6 +3,10 @@
 		max-width: 700px;
 	}
 
+	.main--small {
+		max-width: $max-width;
+	}
+
 	.nav__wrapper {
 		max-width: 700px;
 	}
