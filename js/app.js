@@ -28,7 +28,6 @@ function init() {
   owa_cmds.push(['setSiteId', 'dc378514da5080f1d78d90cfa76a9023']);
   owa_cmds.push(['trackPageView']);
   owa_cmds.push(['trackClicks']);
-  owa_cmds.push(['trackDomStream']);
 
   (function() {
     var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
