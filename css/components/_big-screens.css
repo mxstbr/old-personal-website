@@ -1,4 +1,12 @@
 @media screen and (min-width: 715px) {
+	.nav__item--left {
+		transform: translate(9em, 3.1em);
+	}
+
+	.nav__item--right {
+		transform: translate(-9em, 3.1em);
+	}
+
 	.main {
 		max-width: 700px;
 	}

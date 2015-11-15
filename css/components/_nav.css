@@ -70,8 +70,7 @@
 }
 
 .nav__item {
-	opacity: 0;
-	transition: opacity 250ms ease-in-out, box-shadow 250ms ease-in-out;
+	transition: opacity 250ms ease-in-out, box-shadow 250ms ease-in-out, transform 250ms ease-in-out;
 	display: inline-block;
 	line-height: $nav-height;
 	vertical-align: top;
@@ -105,10 +104,12 @@
 
 .nav__item--left {
 	float: left;
+	transform: translate(0, 3.1em);
 }
 
 .nav__item--right {
 	float: right;
+	transform: translate(-0.5em, 3.1em);
 }
 
 .js-has-scrolled .nav__subtitle {
@@ -129,6 +130,7 @@
 
 .js-has-scrolled .nav__item {
 	opacity: 1;
+	transform: translate(0, 0);
 }
 
 .js-has-scrolled .fadeout {

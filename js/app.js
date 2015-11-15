@@ -13,23 +13,13 @@ if (window.addEventListener) {
 function init() {
   // Fade in the body
   document.body.classList.add("js-has-loaded");
-  // If the user won't be able to scroll
-  if (window.innerHeight >= getDocumentHeight()) {
-    // Make the margin of the main content smaller
-    // And show the nav bar after a short timeout
-    setTimeout(function() {
-      document.body.classList.add("js-big-screen");
-      document.body.classList.add("js-has-scrolled");
-    }, 1500);
-  } else {
-    // Otherwise check if page is already scrolled
-    setScrolledClass();
-    // Show/Hide the navbar on scroll
-    window.onscroll = setScrolledClass;
-    // All links should be opened after fading out the body
-    for (var i = links.length - 1; i >= 0; i--) {
-      links[i].onclick = fadeOutBody;
-    }
+  // Otherwise check if page is already scrolled
+  setScrolledClass();
+  // Show/Hide the navbar on scroll
+  window.onscroll = setScrolledClass;
+  // All links should be opened after fading out the body
+  for (var i = links.length - 1; i >= 0; i--) {
+    links[i].onclick = fadeOutBody;
   }
 
   // Add analytics asynchronously on load
