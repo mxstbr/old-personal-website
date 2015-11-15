@@ -11,8 +11,6 @@ body.js-has-loaded {
 	max-width: $max-width;
 	margin: 0 auto;
 	padding: 0 38px;
-	padding-left: 38px;
-	padding-right: 16px;
 	position: relative;
 	margin-top: 9.5em;
 }
@@ -23,6 +21,10 @@ body.js-has-loaded {
 
 .main p + p a {
 	text-decoration: underline;
+}
+
+.main h2 {
+	font-size: 1.25em;
 }
 
 .main--wide {
@@ -36,9 +38,19 @@ body.js-has-loaded {
 	height: 0;
 }
 
+.main-section > h2 {
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+.main-section {
+	margin: 3em 0;
+}
+
 .main-item {
 	position: relative;
-	margin: 2em 0;
+	margin-top: 2em;
+	margin-bottom: 2em;
 	font-size: 1em;
 }
 
@@ -49,11 +61,43 @@ body.js-has-loaded {
 	height: 0;
 }
 
+.main-item + .main-item {
+	margin-top: 2em;
+}
+
 .main--animated .main-item {
 	animation: slidein 300ms ease-in-out 1;
 	animation-fill-mode: both;
 	transition: transform 250ms ease-in-out;
 	opacity: 0;
+}
+
+.main-section__recognition .main-item {
+	width: 100%;
+}
+
+.main-item__award {
+	display: block;
+	width: 100%;
+	float: left;
+	vertical-align: middle;
+	height: 35px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0.5em 0;
+}
+
+.main-item__award:nth-of-type(1) {
+	background-image: url(/awwwards.svg);
+}
+
+.main-item__award:nth-of-type(2) {
+	background-image: url(/csswinner.svg);
+}
+
+.main-item__award:nth-of-type(3) {
+	background-image: url(/fwaLogo.svg);
 }
 
 .main-item:nth-of-type(1) {
@@ -74,6 +118,26 @@ body.js-has-loaded {
 
 .main-item:nth-of-type(5) {
 	animation-delay: 1100ms;
+}
+
+.main-item:nth-of-type(6) {
+	animation-delay: 1250ms;
+}
+
+.main-item:nth-of-type(7) {
+	animation-delay: 1400ms;
+}
+
+.main-item:nth-of-type(8) {
+	animation-delay: 1550ms;
+}
+
+.main-item:nth-of-type(9) {
+	animation-delay: 1700ms;
+}
+
+.main-item:nth-of-type(10) {
+	animation-delay: 1850ms;
 }
 
 .main-item a {
@@ -98,11 +162,15 @@ body.js-has-loaded {
 	margin: 0;
 }
 
-.main-item h2 {
+.main-item h3 {
 	font-size: 1em;
 	font-weight: 700;
 	margin: 0;
 	display: inline-block;
+}
+
+.awards-logo {
+	width: 100%;
 }
 
 @keyframes slidein {

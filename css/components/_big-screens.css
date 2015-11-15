@@ -1,0 +1,44 @@
+@media screen and (min-width: 975px) {
+	.main {
+		max-width: 700px;
+	}
+
+	.main-item {
+		width: 297px;
+		float: left;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+	.main-item:nth-child(2n) {
+		margin-left: 30px;
+		margin-top: 1em;
+	}
+
+	.main-row {
+		width: 100%;
+	}
+
+	.main-row:after {
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+	}
+
+	.main-section:after {
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+	}
+
+	.main-section__open-source .main-item {
+		width: 259px;
+		margin-left: 1.7em;
+	}
+
+	.main-section__open-source .main-item:nth-child(2n) {
+		margin-left: calc(40px + 1.7em);
+	}
+}

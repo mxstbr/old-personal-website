@@ -1,0 +1,61 @@
+.main-item__work {
+	width: 100%;
+	height: 167.5px;
+	text-align: center;
+	position: relative;
+	border-radius: 3px;
+	background-size: cover;
+	background-position: center;
+}
+
+.main-item__work-overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 2;
+	transition: background-color 150ms ease-out;
+	border-radius: 3px;
+}
+
+.main-item__work a {
+	z-index: 3;
+	display: block;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.main-item__work h3 {
+	color: white;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	opacity: 1;
+	transition: opacity 150ms ease-out;
+}
+
+.main-item__work:hover .main-item__work-overlay {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.main-item__work:hover h3 {
+	opacity: 0;
+}
+
+.frankensim {
+	background-image: url(https://leorio-files.s3.amazonaws.com/uploads/5bbd099f-9538-453f-b40b-986ea55a726a_small.png);
+}
+
+.unfallchirurgin {
+	background-image: url(/unfallchirurgin.png);
+}
+
+.cruk {
+	background-image: url(https://leorio-files.s3.amazonaws.com/uploads/f4783496-17f3-45de-90d0-788f9aea6857_large.png);
+}
+
+.lyst {
+	background-image: url(https://leorio-files.s3.amazonaws.com/uploads/675082c5-de39-4051-bc68-9d92403eab2e_large.png);
+}
