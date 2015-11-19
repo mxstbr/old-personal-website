@@ -80,6 +80,11 @@ body.js-has-loaded {
 	padding-left: 1.6em;
 }
 
+.main-item ul {
+	margin: 0;
+	padding-left: 1.6em;
+}
+
 .main-item__award {
 	display: block;
 	float: left;
