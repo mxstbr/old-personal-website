@@ -62,7 +62,7 @@ module.exports = function(grunt) {
               base: 'build',
               livereload: true,
               hostname: '0.0.0.0',
-              open: true
+              open: false
             }
           }
       },
@@ -81,11 +81,14 @@ module.exports = function(grunt) {
         }
       },
       uglify: { // Optimize the JS file, for a full list of things UglifyJS does look here: http://lisperator.net/uglifyjs/compress
-          bundle: {
-              files: {
-                'build/js/bundle.min.js': ['build/js/bundle.js'] // Transform bundle.js into bundle.min.js
-            }
+        bundle: {
+            files: {
+              'build/js/bundle.min.js': ['build/js/bundle.js'] // Transform bundle.js into bundle.min.js
           }
+        },
+        options: {
+          wrap: false
+        }
       },
       copy: { // Copy files to build folder
         build: {
@@ -96,7 +99,7 @@ module.exports = function(grunt) {
       },
       includes: {
         files: {
-          src: ['*.html', 'casestudies/**/*.html', 'about/**/*.html', 'zohoverify/**/*.html'], // Source files
+          src: ['*.html', 'casestudies/**/*.html', 'about/**/*.html', 'bookshelf/**/*.html', 'zohoverify/**/*.html'], // Source files
           dest: 'build', // Destination directory
           flatten: false,
           cwd: '.',

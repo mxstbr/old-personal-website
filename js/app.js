@@ -23,11 +23,11 @@ function init() {
   }
 
   // Add analytics asynchronously on load
-  var owa_baseUrl = 'http://analytics.mxstbr.com/';
-  var owa_cmds = owa_cmds || [];
-  owa_cmds.push(['setSiteId', 'dc378514da5080f1d78d90cfa76a9023']);
-  owa_cmds.push(['trackPageView']);
-  owa_cmds.push(['trackClicks']);
+  window.owa_baseUrl = 'http://analytics.mxstbr.com/';
+  window.owa_cmds = window.owa_cmds || [];
+  window.owa_cmds.push(['setSiteId', 'dc378514da5080f1d78d90cfa76a9023']);
+  window.owa_cmds.push(['trackPageView']);
+  window.owa_cmds.push(['trackClicks']);
 
   (function() {
     var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
