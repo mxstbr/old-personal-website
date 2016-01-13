@@ -15,6 +15,7 @@ module.exports = function(grunt) {
                 }),
                 require('cssnano')({ // ...and minify the result.
                   autoprefixer: false, // Don't run autoprefixer since we've already done that...
+                  zindex: false,
                   discardComments: {
                     removeAll: true // ...and remove all comments, even those marked important.s
                   }
