@@ -76,7 +76,7 @@ body.js-has-loaded {
 	width: 100%;
 }
 
-.main-section__open-source .main-item {
+.main-section--with-icons .main-item {
 	padding-left: 1.6em;
 }
 
@@ -182,15 +182,26 @@ body.js-has-loaded {
 	top: 0em;
 }
 
-.main-item p {
+.main p {
 	margin: 0;
 }
 
-.main-item h3 {
+.main h3 {
 	font-size: 1em;
 	font-weight: 700;
 	margin: 0;
 	display: inline-block;
+}
+
+.main hr {
+	border: none;
+	border-bottom: 1px solid $mid-grey;
+	width: 90%;
+	margin: 1em auto;
+}
+
+.talk-date {
+	font-weight: 300;
 }
 
 .awards-logo {

@@ -3,6 +3,7 @@
 /* Typography */
 $serif: 'Source Serif Pro', Georgia, serif;
 $sans-serif: 'Source Sans Pro', Helvetica Neue, Helvetica, Arial, sans-serif;
+$monospace: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 $font-size: 16px;
 
 /* Colors */

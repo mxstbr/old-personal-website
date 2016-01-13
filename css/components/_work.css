@@ -26,22 +26,32 @@
 	top: 0; left: 0; right: 0; bottom: 0;
 }
 
-.main-item__work h3 {
-	color: white;
+.main-item__work-text {
 	position: absolute;
 	top: 50%; left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 3;
 	opacity: 1;
 	transition: opacity 150ms ease-out;
-	margin-left: 0;
+}
+
+.main-item__work h3,
+.main-item__work h4 {
+	color: white;
+	margin: 0;
+}
+
+.main-item__work h4 {
+	font-size: 0.75em;
+	font-style: italic;
+	font-weight: 400;
 }
 
 .main-item__work:hover .main-item__work-overlay {
 	background-color: rgba(0, 0, 0, 0);
 }
 
-.main-item__work:hover h3 {
+.main-item__work:hover .main-item__work-text {
 	opacity: 0;
 }
 

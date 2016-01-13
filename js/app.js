@@ -28,7 +28,6 @@ function init() {
   window.owa_cmds.push(['setSiteId', 'dc378514da5080f1d78d90cfa76a9023']);
   window.owa_cmds.push(['trackPageView']);
   window.owa_cmds.push(['trackClicks']);
-
   (function() {
     var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
     owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );

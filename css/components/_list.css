@@ -1,0 +1,8 @@
+.main-list {
+  list-style: none;
+  padding: 0;
+}
+
+.main-list__item {
+  margin: 0.5em 0;
+}

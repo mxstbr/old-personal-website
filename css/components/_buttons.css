@@ -1,1 +1,25 @@
 /*This file contains all styles related to the button component.*/
+
+.btn {
+  border: 2px solid $text-color;
+  color: $text-color;
+  background-color: transparent;
+  border-radius: 2px;
+  padding: 0.4em 1.5em;
+  margin: 1.5em auto;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn--primary {
+  border-color: $green;
+  background-color: $green;
+  color: white;
+}
+
+.btn-wrapper {
+  text-align: center;
+}
