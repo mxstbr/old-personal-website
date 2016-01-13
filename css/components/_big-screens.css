@@ -56,4 +56,8 @@
 	.main-section__open-source .main-item:nth-child(2n) {
 		margin-left: 1.8em;
 	}
+
+	.talk-date {
+		display: inline-block;
+	}
 }

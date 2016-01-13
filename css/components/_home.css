@@ -201,7 +201,7 @@ body.js-has-loaded {
 }
 
 .talk-date {
-	font-weight: 300;
+	display: block;
 }
 
 .awards-logo {
