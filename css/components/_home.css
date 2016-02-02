@@ -204,6 +204,10 @@ body.js-has-loaded {
 	display: block;
 }
 
+.talk-location a {
+	text-decoration: none;
+}
+
 .awards-logo {
 	width: 100%;
 }
