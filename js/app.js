@@ -94,6 +94,7 @@ function fadeOutBody(evt) {
   }
   // After body faded out, open the link in the same window/tab
   setTimeout(function() {
+    document.body.classList.add("js-has-loaded");
     window.open(href, "_self");
   }, 150);
 }
