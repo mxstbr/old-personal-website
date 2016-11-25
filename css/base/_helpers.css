@@ -40,3 +40,8 @@
 .italic {
   font-style: italic;
 }
+
+.mouseover {
+    border-bottom: 1px dashed $text-color;
+    cursor: help;
+}

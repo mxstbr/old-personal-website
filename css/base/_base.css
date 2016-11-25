@@ -33,5 +33,13 @@ a {
 }
 
 img {
-	max-width: 100%;
+	max-width: 95%;
+    margin: 1em auto;
+}
+
+.about-image {
+    border-radius: 50%;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
 }

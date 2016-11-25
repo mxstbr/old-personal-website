@@ -12,7 +12,7 @@
 	}
 
 	.main--small {
-		max-width: $max-width;
+		max-width: 25em;
 	}
 
 	.nav__wrapper {
