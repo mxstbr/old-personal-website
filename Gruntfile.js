@@ -100,7 +100,7 @@ module.exports = function(grunt) {
       },
       includes: {
         files: {
-          src: ['*.html', 'casestudies/**/*.html', 'about/**/*.html', 'bookshelf/**/*.html', 'zohoverify/**/*.html'], // Source files
+          src: ['*.html', 'casestudies/**/*.html', 'about/**/*.html', 'audits/**/*.html', 'bookshelf/**/*.html', 'zohoverify/**/*.html'], // Source files
           dest: 'build', // Destination directory
           flatten: false,
           cwd: '.',
