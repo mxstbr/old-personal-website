@@ -33,14 +33,44 @@ a {
 }
 
 img {
-	max-width: 95%;
+	max-width: 100%;
     margin: 1em auto;
     display: block;
 }
 
-.about-image {
+.round-image {
     border-radius: 50%;
     width: 50%;
     margin: 0 auto;
     display: block;
+}
+
+blockquote {
+    margin: 1.5em 0;
+    padding: 0 1.5em;
+    position: relative;
+    font-family: Georgia, serif;
+    font-style: italic;
+    line-height: 1.5em;
+}
+
+blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -1rem;
+    top: -1rem;
+    line-height: initial;
+    color: $light-mid-grey;
+}
+
+cite {
+    display: block;
+    margin-top: 0.5em;
+    color: $mid-grey;
+}
+
+cite:before {
+    content: "— ";
 }
