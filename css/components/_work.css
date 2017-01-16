@@ -55,18 +55,10 @@
 	opacity: 0;
 }
 
-.frankensim {
-	background-image: url(https://img.gs/jztmrqvgzv/300x200/mxstbr.com/frankensim-new.png);
+.react-boilerplate {
+	background-image: url(https://img.gs/jztmrqvgzv/300x170/mxstbr.com/react-boilerplate-rust.png);
 }
 
-.unfallchirurgin {
-	background-image: url(https://img.gs/jztmrqvgzv/300x200/mxstbr.com/unfallchirurgin.png);
-}
-
-.cruk {
-	background-image: url(/cruk.png);
-}
-
-.lyst {
-	background-image: url(/lyst.png);
+.styled-components {
+	background-image: url(https://img.gs/jztmrqvgzv/300x170/mxstbr.com/styled-components.png);
 }

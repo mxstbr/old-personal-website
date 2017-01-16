@@ -74,3 +74,39 @@ cite {
 cite:before {
     content: "— ";
 }
+
+.notice {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 7;
+    background: $text-color;
+    color: white;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 0.5em 1em;
+}
+
+.notice-checkbox-label {
+    z-index: 8;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0.5em 1em;
+    color: white;
+    cursor: pointer;
+}
+
+#notice-checkbox {
+    position: absolute;
+    opacity: 0;
+    top: -9999999999;
+    left: -9999999999;
+}
+
+#notice-checkbox:checked ~ .notice,
+#notice-checkbox:checked ~ .notice-checkbox-label {
+    display: none;
+}

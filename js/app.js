@@ -1,5 +1,4 @@
 var nav = document.querySelector('.nav');
-var links = document.querySelectorAll('a');
 var scrolled = false;
 
 // Cross browser compatible, non-overriding window.onload function
@@ -9,6 +8,19 @@ if (window.addEventListener) {
   window.attachEvent && window.attachEvent("onload", init);
 }
 
+var rbStarsElem = document.querySelector('#react-boilerplate-stars');
+var scStarsElem = document.querySelector('#styled-components-stars');
+function getGitHubUrl(owner, repo) {
+    return 'https://api.github.com/search/repositories?q=repo%3A' + owner + '%2F' + repo;
+}
+var repos = [{
+    owner: 'styled-components',
+    name: 'styled-components'
+}, {
+    owner: 'mxstbr',
+    name: 'react-boilerplate'
+}]
+
 // Initialize the page
 function init() {
   // Fade in the body
@@ -17,10 +29,29 @@ function init() {
   setScrolledClass();
   // Show/Hide the navbar on scroll
   window.onscroll = setScrolledClass;
-  // All links should be opened after fading out the body
-  for (var i = links.length - 1; i >= 0; i--) {
-    links[i].onclick = fadeOutBody;
-  }
+
+    repos.forEach(function (repo) {
+        var elem = document.querySelector('#' + repo.name + '-stars');
+        var yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        if (localStorage.getItem(repo.name + '-stars') && localStorage.getItem(repo.name + '-stars-time') < yesterday) {
+            elem.innerHTML = localStorage.getItem(repo.name + '-stars') + ' stars';
+        } else {
+            var url = getGitHubUrl(repo.owner, repo.name);
+            var request = new XMLHttpRequest();
+            request.onload = function(response) {
+                if (elem) {
+                    var stars = JSON.parse(this.responseText).items[0].stargazers_count
+                    elem.innerHTML = stars + ' stars';
+                    localStorage.setItem(repo.name + '-stars', stars)
+                    localStorage.setItem(repo.name + '-stars-item', new Date())
+                }
+            }
+            request.open('GET', url);
+            request.send();
+        }
+    })
+
 
   // Add analytics asynchronously on load
   window.owa_baseUrl = 'http://analytics.mxstbr.com/';
@@ -65,36 +96,4 @@ function getDocumentHeight() {
         doc.body.offsetHeight, doc.documentElement.offsetHeight,
         doc.body.clientHeight, doc.documentElement.clientHeight
     );
-}
-
-// Fade out the body before opening a link
-function fadeOutBody(evt) {
-  var href;
-  // Remove fade in class
-  document.body.classList.remove("js-has-loaded");
-  // If target was not the anchor tag that wants to be opened
-  if (evt.target.href === undefined) {
-    // Go through the parent elements
-    var parentElements = window.event.path;
-    if (parentElements !== undefined) {
-      for (var i = 0; i < parentElements.length; i++) {
-        // Get the first anchor tag
-        if (parentElements[i].nodeName === "A") {
-          evt.preventDefault();
-          // And open the href of that tag
-          href = parentElements[i].href;
-          break;
-        }
-      }
-    }
-  // If target was an anchor tag, open that href
-  } else {
-    evt.preventDefault();
-    href = evt.target.href;
-  }
-  // After body faded out, open the link in the same window/tab
-  setTimeout(function() {
-    document.body.classList.add("js-has-loaded");
-    window.open(href, "_self");
-  }, 150);
 }

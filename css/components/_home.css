@@ -1,12 +1,3 @@
-body {
-	opacity: 0;
-	transition: opacity 150ms ease-in-out;
-}
-
-body.js-has-loaded {
-	opacity: 1;
-}
-
 .main {
 	max-width: $max-width;
 	margin: 0 auto;
