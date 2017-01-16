@@ -35,6 +35,7 @@ a {
 img {
 	max-width: 95%;
     margin: 1em auto;
+    display: block;
 }
 
 .about-image {
