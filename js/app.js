@@ -17,7 +17,7 @@ var repos = [{
     owner: 'styled-components',
     name: 'styled-components'
 }, {
-    owner: 'mxstbr',
+    owner: 'react-boilerplate',
     name: 'react-boilerplate'
 }]
 
@@ -34,7 +34,7 @@ function init() {
         var elem = document.querySelector('#' + repo.name + '-stars');
         var yesterday = new Date();
         yesterday.setDate(yesterday.getDate() - 1);
-        if (localStorage.getItem(repo.name + '-stars') && localStorage.getItem(repo.name + '-stars-time') < yesterday) {
+        if (localStorage.getItem(repo.name + '-stars') && localStorage.getItem(repo.name + '-stars-time') && localStorage.getItem(repo.name + '-stars-time') < yesterday) {
             elem.innerHTML = localStorage.getItem(repo.name + '-stars') + ' stars';
         } else {
             var url = getGitHubUrl(repo.owner, repo.name);
@@ -44,7 +44,7 @@ function init() {
                     var stars = JSON.parse(this.responseText).items[0].stargazers_count
                     elem.innerHTML = stars + ' stars';
                     localStorage.setItem(repo.name + '-stars', stars)
-                    localStorage.setItem(repo.name + '-stars-item', new Date())
+                    localStorage.setItem(repo.name + '-stars-time', new Date())
                 }
             }
             request.open('GET', url);
