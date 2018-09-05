@@ -1,17 +1,17 @@
 /*This file contains all styles related to the button component.*/
 
 .btn {
-  border: 2px solid $text-color;
-  color: $text-color;
-  background-color: transparent;
+  color: white;
+  background-color: $text-color;
   border-radius: 2px;
-  padding: 0.4em 1.5em;
-  margin: 1.5em auto;
+  padding: 0.6em 1.5em;
   display: inline-block;
   position: relative;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 .btn--primary {
